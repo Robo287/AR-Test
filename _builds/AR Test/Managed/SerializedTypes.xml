@@ -1,0 +1,40 @@
+<linker>
+	<assembly fullname="Microsoft.MixedReality.OpenXR">
+		<type fullname="Microsoft.MixedReality.OpenXR.HandTrackingOptions" preserve="nothing" serialized="true"/>
+	</assembly>
+	<assembly fullname="Microsoft.MixedReality.Toolkit">
+		<type fullname="Microsoft.MixedReality.Toolkit.Utilities.ExperienceScale" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.Utilities.SystemType" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.CameraSystem.MixedRealityCameraSettingsConfiguration" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.Input.MixedRealityInputDataProviderConfiguration" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.SpatialAwareness.MixedRealitySpatialObserverConfiguration" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.SceneSystem.SceneInfo" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.SceneSystem.MixedRealitySceneSystemProfile/CachedLightingSettings" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.SceneSystem.RuntimeRenderSettings" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.SceneSystem.RuntimeLightingSettings" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.SceneSystem.RuntimeSunlightSettings" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.Input.MixedRealityInputAction" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.Input.PointerOption" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.Input.MixedRealityGestureMapping" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.Input.SpeechCommands" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.Input.MixedRealityControllerMapping" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.Input.MixedRealityInteractionMapping" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.Input.MixedRealityControllerVisualizationSetting" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.Input.AnimatedCursorStateData" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.Utilities.AnimatorParameter" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.Input.AnimatedCursorContextData" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.Utilities.BezierDataProvider/BezierPointSet" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.Utilities.ProximityLight/LightSettings" preserve="nothing" serialized="true"/>
+		<type fullname="Microsoft.MixedReality.Toolkit.Physics.GazeStabilizer" preserve="nothing" serialized="true"/>
+	</assembly>
+	<assembly fullname="Microsoft.MixedReality.Toolkit.Services.InputSimulation">
+		<type fullname="Microsoft.MixedReality.Toolkit.Input.KeyBinding" preserve="nothing" serialized="true"/>
+	</assembly>
+	<assembly fullname="Microsoft.MixedReality.Toolkit.SDK">
+		<type fullname="Microsoft.MixedReality.Toolkit.UI.ManipulationEvent" preserve="nothing" serialized="true"/>
+	</assembly>
+	<assembly fullname="UnityEngine.CoreModule">
+		<type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true"/>
+	</assembly>
+</linker>

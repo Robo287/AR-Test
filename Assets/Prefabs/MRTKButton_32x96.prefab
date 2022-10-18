@@ -413,6 +413,7 @@ GameObject:
   - component: {fileID: 6109464103186326291}
   - component: {fileID: 5256992983505566650}
   - component: {fileID: 4538389516167498027}
+  - component: {fileID: 8781929884330583877}
   m_Layer: 0
   m_Name: MRTKButton_32x96
   m_TagString: Untagged
@@ -920,6 +921,19 @@ MonoBehaviour:
   defaultButtonQuadMaterial: {fileID: 2100000, guid: fa419ab56051229449e3b813df8f295f, type: 2}
   iconSet: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
   defaultIconSet: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
+--- !u!114 &8781929884330583877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6109464103186326290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11325d9017e34894ea7fb3844d57db71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnText: {fileID: 6109464103673098978}
 --- !u!1 &6109464103673098976
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,7 +944,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6109464103673098977}
   - component: {fileID: 6109464103673098909}
-  - component: {fileID: 6109464103673098908}
   - component: {fileID: 6109464103673098979}
   - component: {fileID: 6109464103673098978}
   m_Layer: 0
@@ -1000,14 +1013,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &6109464103673098908
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6109464103673098976}
-  m_Mesh: {fileID: 0}
 --- !u!222 &6109464103673098979
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1155,7 +1160,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6109464104781434815
 Transform:
   m_ObjectHideFlags: 0

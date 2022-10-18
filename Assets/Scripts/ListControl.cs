@@ -23,6 +23,7 @@ public class ListControl : MonoBehaviour
             GameObject button = Instantiate(buttonTemplate) as GameObject;
             button.SetActive(true);
             button.transform.SetParent(buttonTemplate.transform.parent, false);
+            button.GetComponent<ButtonControl>().SetText("Ticket Number: " + i + System.Environment.NewLine + "[summary]");
         }
         scrollList.UpdateCollection();
         // StartCoroutine(APIHandler());

@@ -281,6 +281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonTemplate: {fileID: 512070335163351569}
+  scrollList: {fileID: 0}
 --- !u!1 &7833600083409477157
 GameObject:
   m_ObjectHideFlags: 0

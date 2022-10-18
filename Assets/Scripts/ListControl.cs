@@ -13,20 +13,44 @@ public class ListControl : MonoBehaviour
     [SerializeField] private GameObject buttonTemplate;
     public GridObjectCollection scrollList;
 
-    // private readonly string libticketURL = "https://api.lib.fau.edu/systems";
-    // private readonly string reflibticketURL = "https://libticket.fau.edu/systems";
+    private readonly string libticketURL = "https://api.lib.fau.edu/systems";
+    private readonly string reflibticketURL = "https://libticket.fau.edu/systems";
+    bool working = true;
 
     void Start()
     {
-        for (var i = 0; i <= 20; i++)
+        StartCoroutine(test());
+        // StopCoroutine(APIHandler());
+        scrollList.UpdateCollection();
+        // APIHandler();
+        // makeList(25);
+    }
+
+    IEnumerator test()
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("user", "eng2022ed1");
+        form.AddField("pass", "ARInLibrary");
+        using (UnityWebRequest auth = UnityWebRequest.Post(libticketURL, form)) //open an authenticated session to make API calls in
+        {
+            yield return auth.SendWebRequest();
+            if (auth.result == UnityWebRequest.Result.Success)
+            {
+                makeList();
+            }
+        }
+    }
+
+    void makeList()
+    {
+        for (var i = 0; i <= 25; i++)
         {
             GameObject button = Instantiate(buttonTemplate) as GameObject;
             button.SetActive(true);
             button.transform.SetParent(buttonTemplate.transform.parent, false);
             button.GetComponent<ButtonControl>().SetText("Ticket Number: " + i + System.Environment.NewLine + "[summary]");
         }
-        scrollList.UpdateCollection();
-        // StartCoroutine(APIHandler());
+        // working = false;
     }
 
     // IEnumerator APIHandler()

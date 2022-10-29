@@ -5,14 +5,11 @@ using UnityEngine.UI;
 
 public class CloseDashboardController : MonoBehaviour
 {
+    public GameObject UI;
 
-    public Text Textfield;
-    public GameObject Cube;
-
-    public void OnPressed(string text)
+    public void OnPressed()
     {
-        Debug.Log("Close the dashboard!");
-        Textfield.text = text;
-        Cube.SetActive(false);
+        Debug.Log("UI Closed!");
+        UI.SetActive(false);
     }
 }
